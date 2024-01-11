@@ -2,9 +2,8 @@
 	box-sizing: border-box;
    margin: 0;
    padding: 0;
-   font-family: 'Tinos', serif;
+   font-family: 'Roboto', 'Noto Sans', sans-serif;
 }
-
 ul {
    list-style: none;
 }
@@ -16,7 +15,11 @@ body {
    padding: 5px 20px;
    display: flex;
    align-items: center;
+   font-size: 14px;
+   font-weight: 500;
+   background-color: #fff;
    box-shadow: 0px 4px 8px #ccc;
+   color: #5f6368;
 }
 .header-top-left {
    width: 220px;
@@ -123,15 +126,50 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   font-weight: bold;
-   background-color: rgb(0, 136, 255);
+   font-weight: 500;
+   background-color: #1A73E8;
    color: white;
+   letter-spacing: normal;
+}
+.header-middle-row-wrapper a {
+   font-weight: bold;
+   color: inherit;
+}
+.header-middle-row-wrapper a:hover {
+   text-decoration: none;
+}
+.header-bottom-row-wrapper {
+   height: 64px;
+   padding: 0 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 14px;
+}
+.header-bottom-row-wrapper a {
+   text-decoration: none;
+   color: #1A73E8;
+}
+.header-bottom-row-wrapper div:first-child {
+   display: flex;
+   gap: 20px;
 }
 
-.header-bottom-row-wrapper {
+.header-bottom-row-wrapper button {
+   width: 160px;
+   height: 36px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 14px;
+   font-weight: 500;
+   color: #1A73E8;
    background-color: #fff;
 }
-.header-bottom-wrapper {
+
+.main-section1-wrapper {
+   background-color: #fff;
+}
+.main-section1-wrapper {
    max-width: 1440px;
    min-height: 340px;
    margin: 0 auto;
@@ -140,36 +178,36 @@ body {
    grid-template-columns: 1fr 1fr;
    gap:15px;
 }
-.header-bottom-left {
+.main-section1-left {
    display: flex;
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
 }
-.header-bottom-left div:first-child {
+.main-section1-left div:first-child {
    margin-bottom: 16px;
    font-size: 100px;
    color: #202124;
 }
-.header-bottom-left div:last-child {
+.main-section1-left div:last-child {
    font-size: 24px;
 }
-.header-bottom-left div {
+.main-section1-left div {
    width: 100%;
 }
-.header-bottom-right {
+.main-section1-right {
    display: flex;
    flex-direction: column;
    border-radius: 8px;
    border: 1px solid #dadce0;
 }
-.header-bottom-right img {
+.main-section1-right img {
    aspect-ratio: 1.8 / 1; 
    width: 100%;
    border-radius: 8px 8px 0 0;
    object-fit: cover;
 }
-.header-bottom-right div {
+.main-section1-right div {
    padding: 10px;
    font-size: 24px;
    color: #1A73E8;
