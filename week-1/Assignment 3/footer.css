@@ -1,0 +1,121 @@
+.footer-wrapper {
+    border-top: 1px solid #dadce0;
+    padding: 0 24px;
+}
+.footer-top-row-wrapper {
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:25px;
+}
+.footer-top-box div {
+    margin-bottom: 6px;
+}
+.footer-top-box li {
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.footer-middle-row-wrapper {
+    padding: 24px 0 23px;
+    border-top: 1px solid #dadce0;
+}
+.footer-middle-row-wrapper nav {
+    display: flex;
+    gap: 25px;
+}
+.footer-middle-row-wrapper > nav > img {
+    width: 185px;
+}
+.footer-middle-row-wrapper ul {
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    line-height: 2.3;
+}
+.footer-middle-row-wrapper li {
+    padding-top: 5px;
+    font-size: 14px;
+}
+.footer-bottom-row-wrapper {
+    border-top: 1px solid #dadce0;
+    padding: 24px 0;
+}
+.footer-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+    line-height: 2.5;
+}
+.footer-bottom-privacy {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+.footer-bottom-privacy ul {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.footer-bottom-privacy li:nth-child(2)::before {
+    width: 1px;
+    height: 12px;
+    background-color: black;
+    position: absolute;
+    top:11px;
+    left: 37px;
+    content: '';
+}
+.footer-bottom-subscribe {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-overflow: ellipsis;
+}
+.footer-bottom-subscribe button {
+    width: 76px;
+    height: 100%;
+    color: #fff;
+    background-color: #1A73E8;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+}
+.footer-bottom-language {
+    margin-left: 15px;
+    padding: 0 7px 0 11px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    gap: 5px;
+}
+.footer-bottom-language span {
+    color: #3c4043;
+}
+@media screen and (max-width: 840px) {
+    .footer-middle-row-wrapper nav {
+        flex-direction: column;
+    }
+    .footer-middle-row-wrapper ul {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .footer-bottom-subscribe {
+        width: 100%;
+    }
+    .footer-bottom-language {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer-top-row-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .footer-wrapper {
+        padding: 0 16px;
+    }
+}

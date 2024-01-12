@@ -10,6 +10,9 @@ ul {
 body {
    background-color: #e8eaed;
 }
+footer {
+   background-color: #fff;
+}
 .header-top-row-wrapper {
    height: 48px;
    padding: 5px 20px;
@@ -104,15 +107,16 @@ body {
    gap:10px;
 }
 .header-top-right span {
-   color: gray;
+   color: #3c4043;
 }
 .header-top-right-language {
-   width: 140px;
+   width: 150px;
    height: 100%;
    padding-left: 10px;
-   border: 1px solid #ddd;
+   border: 1px solid black;
    display: flex;
    align-items: center;
+   gap: 5px;
 }
 .header-top-right-profile {
    width: 35px;
