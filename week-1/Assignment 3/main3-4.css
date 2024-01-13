@@ -46,7 +46,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    word-break: break-all;
+    word-break: break-word;
     gap: 10px;
     text-align: center;
 }
@@ -159,6 +159,9 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .main-section4-wrapper {
+        padding: 0 16px;
+    }
     .main-section4-box-wrapper {
         grid-template-columns: minmax(100px,1fr);
     }

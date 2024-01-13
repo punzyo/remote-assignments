@@ -1,0 +1,122 @@
+.main-section5-row-wrapper {
+    background-color: #fff;
+    line-height: 1.5;
+    color: #202124;
+    padding: 40px 0 64px;
+}
+.main-section5-wrapper {
+    max-width: 1488px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.main-section5-header h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+.main-section5-box-wrapper {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:24px;
+}
+.main-section5-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.main-section5-box img {
+    width: 100%;
+}
+.main-section5-box-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 20px; 
+    word-break: break-word;
+}
+.main-section5-box-content > p:first-child {
+    color: var(--text-color-2);
+    font-size: 24px;
+}
+.main-section5-box-content > p:nth-child(2) {
+    font-size: 16px;
+}
+.main-section5-box-content-button {
+    max-width: 105px;
+}
+.main-section5-box-content-button button {
+    width: 100%;
+}
+@media screen and (max-width: 840px) {
+    .main-section5-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+    .main-section5-wrapper {
+        padding: 0 16px;
+    }
+    .main-section5-box-wrapper {
+        grid-template-columns: minmax(100px,1fr);
+    }
+    .main-section5-header h2 {
+        font-size: 24px;
+    }
+}
+.main-section6-row-wrapper {
+    background-color: #f1f3f4;
+    color: #202124;
+    padding: 64px 0;
+}
+.main-section6-wrapper {
+    max-width: 1488px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.main-section6-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.main-section6-box-img {
+    display: flex;
+    align-items: center;
+}
+.main-section6-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+.main-section6-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    word-break: break-word;
+}
+.main-section6-box-content h2 {
+    text-align: left;
+    margin: 8px 0 24px;
+    font-size: 48px;
+}
+.main-section6-box-content p {
+    line-height: 1.4;
+    font-size: 18px;
+}
+.main-section6-box-content span {
+    font-size: 14px;
+}
+.main-section6-box-content-button {
+    padding: 32px 0 0;
+    max-width: 105px;
+}
+.main-section6-box-content-button button {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .main-section6-box {
+        grid-template-columns: minmax(100px, 1fr);
+    }
+}

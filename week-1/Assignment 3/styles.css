@@ -1,3 +1,12 @@
+:root {
+   --background-color-0: #e8eaed;
+   --background-color-1: #fff;
+   --text-color-1: #202124;
+   --text-color-2:#1a73e8;
+   --button-background-color: #1a73e8;
+   --button-text-color: #fff;
+
+}
 * {
 	box-sizing: border-box;
    margin: 0;
@@ -8,10 +17,10 @@ ul {
    list-style: none;
 }
 body {
-   background-color: #e8eaed;
+   background-color: var(--background-color-0);
 }
 footer {
-   background-color: #fff;
+   background-color: var(--background-color-1);
 }
 .button {
    overflow: hidden;
@@ -21,8 +30,8 @@ footer {
    padding: 0 24px;
    text-decoration: none;
    text-align: center;
-   color: #fff;
-   background-color: #1a73e8;
+   color: var(--button-text-color);
+   background-color: var(--button-background-color);
    border: none;
    border-radius: 4px 2px;
    text-overflow: ellipsis;
@@ -36,7 +45,7 @@ footer {
    gap: 10px;
    font-size: 14px;
    font-weight: 500;
-   background-color: #fff;
+   background-color: var(--background-color-1);
    box-shadow: 0px 4px 8px #ccc;
    color: #5f6368;
 }
