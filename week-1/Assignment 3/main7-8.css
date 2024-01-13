@@ -118,7 +118,7 @@
     font-weight: 400;
 }
 .main-section8-box-button {
-    max-width: 105px;
+    max-width: 115px;
     padding-top: 16px;
 }
 .main-section8-box-button > button {
@@ -141,7 +141,6 @@
     }
 }
 @media screen and (max-width: 300px) {
-
     .main-section8-header {
         justify-content: flex-start;
     }
