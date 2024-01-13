@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.5 131.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fbbc04;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5 {
+        stroke: #000;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #00b649;
+        stroke: #292223;
+      }
+
+      .cls-4 {
+        fill: #4285f4;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-2" d="m21.93,42.24h107.33c8.15,0,14.76,6.61,14.76,14.76v44.11c0,6.68-5.42,12.11-12.11,12.11H18.92c-6.48,0-11.75-5.26-11.75-11.75v-44.47c0-8.15,6.61-14.76,14.76-14.76Z" transform="translate(151.19 155.45) rotate(-180)"/>
+      <polygon class="cls-3" points="26.91 90.41 65.96 90.41 46.09 1 7.04 1 26.91 90.41"/>
+      <ellipse class="cls-2" cx="37.04" cy="45.7" rx="31.48" ry="39.3" transform="translate(-21.72 42.82) rotate(-48.17)"/>
+      <path class="cls-5" d="m104.38,83.22s10.01,40.04-14.12,45.98c-34.9,8.6-46.13-27.61-53.22-83.5"/>
+      <circle class="cls-1" cx="37.04" cy="45.7" r="9.13"/>
+      <rect class="cls-4" x="92.32" y="65.05" width="25.35" height="25.35"/>
+      <path class="cls-2" d="m92.32,26.01h56.05s-2.81-24.38-22.43-24.38-33.62,24.38-33.62,24.38Z"/>
+    </g>
+  </g>
+</svg>

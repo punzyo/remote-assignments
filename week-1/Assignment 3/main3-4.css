@@ -68,19 +68,7 @@
     
 }
 .main-section3-bottom button{
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 14px;
     width: 190px;
-    height: 36px;
-    padding: 0 24px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    background-color: #1a73e8;
-    border: none;
-    border-radius: 4px 2px;
-    text-overflow: ellipsis;
 }
 @media screen and (max-width: 850px) {
     .main-section3-middle {
@@ -96,5 +84,82 @@
     }
     .main-section3-middle {
         grid-template-columns: minmax(0px, 1fr);
+    }
+}
+
+.main-section4-row-wrapper {
+    padding: 40px 0px;
+    background-color: #fff;
+    line-height: 1.5;
+    color: #202124;
+}
+.main-section4-wrapper {
+    max-width: 1488px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.main-section4-header {
+    text-align: center;
+}
+.main-section4-header h2 {
+    font-size: 48px;
+}
+.main-section4-header p {
+    margin-top: 16px;
+    display: block;
+    font-size: 24px;
+}
+.main-section4-box-wrapper {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.main-section4-box {
+    padding: 16px;
+    display: flex;
+    gap: 15px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
+.main-section4-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+.main-section4-box-content h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.main-section4-box-content p {
+    font-size: 18px;
+}
+.main-section4-box-content-button {
+    max-width: 105px;
+    padding: 16px 0 0;
+}
+.main-section4-box-content-button button {
+    width: 100%;
+}
+.main-section4-box-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.main-section4-box-img img {
+    width: 100%;
+    max-width: 150px;
+    max-height: 100px;
+} 
+@media screen and (max-width: 840px) {
+    .main-section4-box {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main-section4-box-wrapper {
+        grid-template-columns: minmax(100px,1fr);
     }
 }
