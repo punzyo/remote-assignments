@@ -1,0 +1,100 @@
+.main-section3-row-wrapper {
+    padding: 40px 0px;
+    background-color: #fff;
+    line-height: 1.5;
+    color: #202124;
+}
+.main-section3-wrapper {
+    max-width: 1488px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.main-section3-top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+}
+.main-section3-middle {
+    margin: 32px auto 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:24px;
+}
+.main-section3-middle-box {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 8px 32px 25px;
+}
+.main-section3-middle-box-img {
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section3-middle-box-img > img {
+    min-width: 35px;
+    max-height: 64px;
+}
+.main-section3-middle-box > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+.main-section3-middle-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+    gap: 10px;
+    text-align: center;
+}
+.main-section3-middle-box-content p {
+    display: block;
+    max-width: 100%;
+}
+.main-section3-middle-box-content > p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+.main-section3-bottom {
+    margin-top: 24px;
+    padding: 24px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-section3-bottom button{
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    width: 190px;
+    height: 36px;
+    padding: 0 24px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 4px 2px;
+    text-overflow: ellipsis;
+}
+@media screen and (max-width: 850px) {
+    .main-section3-middle {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-section3-bottom {
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main-section3-wrapper {
+        padding: 0 16px;
+    }
+    .main-section3-middle {
+        grid-template-columns: minmax(0px, 1fr);
+    }
+}
