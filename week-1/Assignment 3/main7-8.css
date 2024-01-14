@@ -1,12 +1,5 @@
 .main-section7-row-wrapper {
-    background-color: #fff;
     line-height: 1.5;
-    color: #202124;
-}
-.main-section7-wrapper {
-    max-width: 1488px;
-    margin: 0 auto;
-    padding: 0 24px;
 }
 .main-section7-box {
     padding: 40px 0;
@@ -25,9 +18,12 @@
     display: flex;
     align-items: center;
 }
-.main-section7-box-img img {
+.main-section7-box-img > img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: var(--border-radius-2);
+}
+.main-section7-box-img > img:hover, .main-section7-box-content > h2:hover {
+    cursor: pointer;
 }
 .main-section7-box-content {
     display: flex;
@@ -38,22 +34,21 @@
 .main-section7-box-content img {
     max-width: 100%;
 }
-.main-section7-box-content h2 {
+.main-section7-box-content > h2 {
     margin-bottom: 24px;
     font-size: 40px;
 }
-.main-section7-box-content p {
+.main-section7-box-content > p {
     font-size: 18px;
 }
 .main-section7-box-content-button {
     max-width: 115px;
     padding-top: 32px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .main-section7-box-content-button button {
     width: 100%;
-    border: 1px solid #dadce0;
-    color: var(--text-color-2);
-    background-color: #fff;
 }
 @media screen and (max-width: 600px) {
     .main-section7-wrapper {
@@ -72,15 +67,7 @@
 }
 
 .main-section8-row-wrapper {
-    background-color: #fff;
     line-height: 1.5;
-    color: #202124;
-    padding: 40px 0;
-}
-.main-section8-wrapper {
-    max-width: 1488px;
-    margin: 0 auto;
-    padding: 0 24px;
 }
 .main-section8-header {
     width: 100%;
@@ -88,7 +75,7 @@
     align-items: center;
     justify-content: center;
 }
-.main-section8-header h2 {
+.main-section8-header > h2 {
     font-size: 48px;
     text-align: center;
 }
@@ -102,8 +89,7 @@
     padding: 16px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #dadce0;
-    border-radius: 8px;
+    justify-content: space-between;
     overflow: hidden;
 }
 .main-section8-box-logo {
@@ -120,12 +106,11 @@
 .main-section8-box-button {
     max-width: 115px;
     padding-top: 16px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .main-section8-box-button > button {
     width: 100%;
-    border: 1px solid #dadce0;
-    color: var(--text-color-2);
-    background-color: #fff;
 }
 @media screen and (max-width: 840px) {
     .main-section8-box-wrapper {
@@ -144,7 +129,7 @@
     .main-section8-header {
         justify-content: flex-start;
     }
-    .main-section8-header h2 {
+    .main-section8-header > h2 {
         text-align: start;
     }
 }

@@ -5,51 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main1-2.css">
     <link rel="stylesheet" href="main3-4.css">
     <link rel="stylesheet" href="main5-6.css">
     <link rel="stylesheet" href="main7-8.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
     <header>
         <div class = 'header-top-row-wrapper'>
-            <div class= 'header-top-left'>
-                <div class = 'header-top-left-menu'>
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </div>
-                <img src="logo.svg" alt="Description of the image">
+            <div class = 'header-top-left-menu'>
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+            <div class= 'header-top-left'>  
+                <img src="images/header/top/logo.svg" alt="Google for Developer logo">
             </div>
             <div class= 'header-top-middle'>   
                 <nav >
                     <ul>
                         <li>
-                            Products
-                            <span class="material-symbols-outlined">
+                            <span>Products</span>
+                            <span class = 'header-top-middle-drop material-symbols-outlined'>
+                                arrow_drop_down
+                            </span>
+                        </li>     
+                        <li><span>Solutions</span></li>
+                        <li><span>Events</span></li>
+                        <li><span>Learn</span></li>
+                        <li><span>Community</span>
+                            <span class = 'header-top-middle-drop material-symbols-outlined'>
                                 arrow_drop_down
                             </span>
                         </li>
-                        <li>Solutions</li>
-                        <li>Events</li>
-                        <li>Learn</li>
+                        <li><span>Developer Profile</span></li>
+                        <li><span>Blog</span></li>
                         <li>
-                            Community
-                            <span class="material-symbols-outlined">
-                                arrow_drop_down
-                            </span>
-                        </li>
-                        <li>Developer Profile</li>
-                        <li>Blog</li>
-                        <li>
-                            更多選項
-                            <span class="material-symbols-outlined">
+                            <span>更多選項</span>
+                            <span class = 'header-top-middle-drop material-symbols-outlined'>
                                 arrow_drop_down
                             </span>
                         </li>
@@ -61,7 +60,6 @@
                     </span>
                     <input type = 'text' placeholder = '搜尋結果'>
                 </div>
-
             </div>
             <div class = 'header-top-right'>
                 <div class = 'header-top-right-language'>
@@ -89,30 +87,34 @@
             </div>
         </div>
         <div class = 'header-bottom-row-wrapper'>
-            <div class = 'header-bottom-message'>
-                <img src="translated.svg" alt="">
-                <div>本頁面由 <a href=""> Cloud Translation API </a>翻譯而成。</div>
-            </div>
-            <button>Switch to English</button>
+            <div class = 'header-bottom-wrapper'>
+                <div class = 'header-bottom-message'>
+                    <img src="images/header/middle/translated.svg" alt=" translated by google image">
+                    <div>本頁面由 <a href=""> Cloud Translation API </a>翻譯而成。</div>
+                </div>
+                <button class = 'button button-style-2'>Switch to English</button>
+            </div>   
         </div>           
     </header> 
     <main>
-        <section class = 'main-section1-row-wrapper'>
-            <div class = 'main-section1-wrapper'>
-                <div class = 'main-section1-left'>
-                    <div>
-                        聰明智慧<br>加速運送
+        <section class = 'main-section-row-wrapper main-section1-row-wrapper'>
+            <div class = 'main-section-wrapper'>
+                <div class = 'main-section1-wrapper '>
+                    <div class = 'main-section1-left'>
+                        <div>
+                            聰明智慧<br>加速運送
+                        </div>
+                        <div>透過開放式整合式解決方案激發創造力並簡化工作流程。</div>
                     </div>
-                    <div>透過開放式整合式解決方案激發創造力並簡化工作流程。</div>
-                </div>
-                <div class = 'main-section1-right'>
-                    <img src="gemini-spotlight.png" alt="">
-                    <div>認識 Google AI Studio，體驗最快速的 Gemini 建構方式</div>
+                    <div class = 'main-section1-right'>
+                        <img src="images/main/section1/gemini-spotlight.png" alt="gemini-spotlight image">
+                        <div class = 'link'>認識 Google AI Studio，體驗最快速的 Gemini 建構方式</div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class = 'main-section2-row-wrapper'>
-            <div class = 'main-section2-wrapper'>
+        <section class = 'main-section-row-wrapper main-section2-row-wrapper' >
+            <div class = 'main-section-wrapper main-section2-wrapper'>
                 <div class = 'main-section2-top'>
                     <div>
                         <div class = 'main-section2-top-info'>
@@ -154,57 +156,57 @@
                 </div>
                 <div class = 'main-section2-bottom'>
                     <div class = 'main-section2-bottom-box-wrapper'>
-                        <div class = 'main-section2-bottom-box'>
+                        <div class = 'main-section2-bottom-box box'>
                             <div class = main-section2-bottom-box-type>
                                 <span class="material-symbols-outlined">article</span>
                                 <div>MARKETING</div>
                             </div>
-                            <div>Titan 安全金鑰</div>
+                            <div class = 'link'>Titan 安全金鑰</div>
                             <div>為高價值使用者提供可防範網路詐騙的雙重驗證功能，不僅適用於多種裝置、瀏覽器與服務，也符合 FIDO 標準。</div>
                             <div class = 'main-section2-bottom-box-icon'>
-                                <img src="cloud-icon.svg" alt="google cloud icon">
+                                <img src="images/main/section2/cloud-icon.svg" alt="google cloud icon">
                                 <div>
                                     Cloud
                                 </div>
                             </div>
                         </div>
-                        <div class = 'main-section2-bottom-box'>
+                        <div class = 'main-section2-bottom-box box'>
                             <div class = main-section2-bottom-box-type>
                                 <span class="material-symbols-outlined">article</span>
                                 <div>MARKETING</div>
                             </div>
-                            <div>Cloud Functions</div>
+                            <div class = 'link'>Cloud Functions</div>
                             <div>可靈活擴充的函式即服務 (FaaS)，讓您以即付即用的方式執行程式碼，且不必管理伺服器。</div>
                             <div class = 'main-section2-bottom-box-icon'>
-                                <img src="cloud-icon.svg" alt="google cloud icon">
+                                <img src="images/main/section2/cloud-icon.svg" alt="google cloud icon">
                                 <div>
                                     Cloud
                                 </div>
                             </div>
                         </div>
-                        <div class = 'main-section2-bottom-box'>
+                        <div class = 'main-section2-bottom-box box'>
                             <div class = 'main-section2-bottom-box-type'>
                                 <span class="material-symbols-outlined">web</span>
                                 <div>PRODUCT</div>
                             </div>
-                            <div>Places Library</div>
+                            <div class = 'link'>Places Library</div>
                             <div>透過 Maps JavaScript API Places Library 中的函式，應用程式可以搜尋位於指定區域的地點。例如在地圖邊界內或定點周圍，尋找建築物、地理位置或重要搜尋點 (此為本 API 對於「地點」的定義)。 Places API 提供自動完成功能，應用程式導入後，即可在Google 地圖搜尋欄位提供預測查詢字串。使用者只要輸入地址開頭，自動完成功能便會填入剩餘部分。詳情請參閱 自動完成說明文件。</div>
                             <div class = 'main-section2-bottom-box-icon'>
-                                <img src="cloud-icon.svg" alt="google cloud icon">
+                                <img src="images/main/section2/cloud-icon.svg" alt="google cloud icon">
                                 <div>
                                     Cloud
                                 </div>
                             </div>
                         </div>
-                        <div class = 'main-section2-bottom-box'>
+                        <div class = 'main-section2-bottom-box box'>
                             <div class = 'main-section2-bottom-box-type'>
                                 <span class="material-symbols-outlined">article</span>
                                 <div>MARKETING</div>
                             </div>
-                            <div>Dialogflow</div>
+                            <div class = 'link'>Dialogflow</div>
                             <div>無論是您的網站、應用程式、訊息傳遞平台或是客服中心，都能輕鬆導入有如真人般的 AI 對話功能，讓先進又能自然對話的</div>
                             <div class = 'main-section2-bottom-box-icon'>
-                                <img src="cloud-icon.svg" alt="google cloud icon">
+                                <img src="images/main/section2/cloud-icon.svg" alt="google cloud icon">
                                 <div>
                                     Cloud
                                 </div>
@@ -218,15 +220,15 @@
                 </div>
             </div>
         </section>
-        <section class = 'main-section3-row-wrapper'>
-            <div class =  'main-section3-wrapper'>
+        <section class = 'main-section-row-wrapper main-section3-row-wrapper'>
+            <div class =  'main-section-wrapper main-section3-wrapper'>
                 <div class = 'main-section3-top'>
                     <header>立即開始建構</header>
                 </div>
                 <div class = 'main-section3-middle'>
                     <div class = 'main-section3-middle-box'>
                         <div class = 'main-section3-middle-box-img'>
-                            <img src="images/main/section3/android-logo.png" alt="android logo">
+                            <img src="images/main/section3/android-logo.png" alt="Android logo">
                         </div>
                         <div class = 'main-section3-middle-box-content'>
                             <p>Android</p>
@@ -235,7 +237,7 @@
                     </div>
                     <div class = 'main-section3-middle-box'>
                         <div class = 'main-section3-middle-box-img'>
-                            <img src="images/main/section3/google_cloud_64dp.png" alt="android logo">
+                            <img src="images/main/section3/google_cloud_64dp.png" alt="Google Cloud logo">
                         </div>
                         <div class = 'main-section3-middle-box-content'>
                             <p>Google Cloud</p>
@@ -244,7 +246,7 @@
                     </div>
                     <div class = 'main-section3-middle-box'>
                         <div class = 'main-section3-middle-box-img'>
-                            <img src="images/main/section3/ai-studio-icon.png" alt="android logo">
+                            <img src="images/main/section3/ai-studio-icon.png" alt="Google Ai Studio logo">
                         </div>
                         <div class = 'main-section3-middle-box-content'>
                             <p>Google AI Studio</p>
@@ -253,7 +255,7 @@
                     </div>
                     <div class = 'main-section3-middle-box'>
                         <div class = 'main-section3-middle-box-img'>
-                            <img src="images/main/section3/chromeos-logo.svg" alt="android logo">
+                            <img src="images/main/section3/chromeos-logo.svg" alt="Chrome logo">
                         </div>
                         <div class = 'main-section3-middle-box-content'>
                             <p>Chrome</p>
@@ -334,59 +336,61 @@
                     </div>
                 </div>
                 <div class = 'main-section3-bottom'>
-                    <button class = 'button'>查看所有開發人員產品</button>
+                    <div class = 'main-section3-bottom-button'>
+                        <button class = 'button button-style-1'>查看所有開發人員產品</button>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class = 'main-section4-row-wrapper'>
-            <div class = 'main-section4-wrapper'>
+        <section class = 'main-section-row-wrapper main-section4-row-wrapper'>
+            <div class = 'main-section-wrapper main-section4-wrapper'>
                 <div class = 'main-section4-header'>
                     <h2>您想要為什麼項目開發內容？</h2>
                     <p>選取您的開發重點，以尋找實用的解決方案和資源</p>
                 </div>
                 <div class = 'main-section4-box-wrapper'>
-                    <div class = 'main-section4-box'>
+                    <div class = 'main-section4-box box'>
                         <div class = 'main-section4-box-content'>
                             <h3>手機號碼</h3>
                             <p>針對各種目標對象和板型規格進行開發。</p>
                             <div class = 'main-section4-box-content-button'>
-                                <button class = 'button'>開始使用</button>
+                                <button class = 'button button-style-1'>開始使用</button>
                             </div>
                         </div>
                         <div class = 'main-section4-box-img'>
                             <img src="images/main/section4/ecosystem-mobile.svg" alt="ecosystem-mobile image">
                         </div>
                     </div>
-                    <div class = 'main-section4-box'>
+                    <div class = 'main-section4-box box'>
                         <div class = 'main-section4-box-content'>
                             <h3>Web</h3>
                             <p>建立快速、安全的開放網路網站和應用程式。</p>
                             <div class = 'main-section4-box-content-button'>
-                                <button class = 'button'>開始使用</button>
+                                <button class = 'button button-style-1'>開始使用</button>
                             </div>
                         </div>
                         <div class = 'main-section4-box-img'>
                             <img src="images/main/section4/ecosystem-web.svg" alt="ecosystem-web image">
                         </div>
                     </div>
-                    <div class = 'main-section4-box'>
+                    <div class = 'main-section4-box box'>
                         <div class = 'main-section4-box-content'>
                             <h3>AI</h3>
                             <p>將機器學習技術導入應用程式和工作流程。</p>
                             <div class = 'main-section4-box-content-button'>
-                                <button class = 'button'>開始使用</button>
+                                <button class = 'button button-style-1'>開始使用</button>
                             </div>
                         </div>
                         <div class = 'main-section4-box-img'>
                             <img src="images/main/section4/ecosystem-ai.svg" alt="ecosystem-ai image">
                         </div>
                     </div>
-                    <div class = 'main-section4-box'>
+                    <div class = 'main-section4-box box'>
                         <div class = 'main-section4-box-content'>
                             <h3>Cloud</h3>
                             <p>簡化端對端開發作業及調度資源。</p>
                             <div class = 'main-section4-box-content-button'>
-                                <button class = 'button'>開始使用</button>
+                                <button class = 'button button-style-1'>開始使用</button>
                             </div>
                         </div>
                         <div class = 'main-section4-box-img'>
@@ -396,47 +400,47 @@
                 </div>
             </div>
         </section>
-        <section class = 'main-section5-row-wrapper'>
-            <div class= 'main-section5-wrapper'>
+        <section class = 'main-section-row-wrapper main-section5-row-wrapper'>
+            <div class= 'main-section-wrapper main-section5-wrapper'>
                 <div class = 'main-section5-header'>
                     <h2>熱門新聞</h2>
                 </div>
                 <div class = 'main-section5-box-wrapper'>
-                    <div class = 'main-section5-box'>
+                    <div class = 'main-section5-box box'>
                         <img src="images/main/section5/newscard-chrome-cookies.webp" alt="newscard-chrome-cookies image">
                         <div class = 'main-section5-box-content'>
                             <p>即將淘汰第三方 Cookie</p>
                             <p>並將於 2024 年 1 月開始淘汰。立即測試網站。</p>
                             <div class = 'main-section5-box-content-button'>
-                                <button class = 'button'>瞭解詳情</button>
+                                <button class = 'button button-style-1'>瞭解詳情</button>
                             </div>
                         </div>
                     </div>
-                    <div class = 'main-section5-box'>
+                    <div class = 'main-section5-box box'>
                         <img src="images/main/section5/devfest-2023.webp" alt="devfest-2023 image">
                         <div class = 'main-section5-box-content'>
                             <p>參加 2023 年 DevFest 大會</p>
                             <p>探索實作學習和技術講座。尋找附近的 DevFest 大會。</p>
                             <div class = 'main-section5-box-content-button'>
-                                <button class = 'button'>瞭解詳情</button>
+                                <button class = 'button button-style-1'>瞭解詳情</button>
                             </div>
                         </div>    
                     </div>
-                    <div class = 'main-section5-box'>
+                    <div class = 'main-section5-box box'>
                         <img src="images/main/section5/content-driven-apps_480.png" alt="driven-apps image">
                         <div class = 'main-section5-box-content'>
                             <p>建構內容導向網頁應用程式</p>
-                        <p>歡迎瀏覽我們精選的指南，瞭解如何打造電子商務、報紙或網誌網頁應用程式。</p>
+                            <p>歡迎瀏覽我們精選的指南，瞭解如何打造電子商務、報紙或網誌網頁應用程式。</p>
                         <div class = 'main-section5-box-content-button'>
-                            <button class = 'button'>瞭解詳情</button>
+                            <button class = 'button button-style-1'>瞭解詳情</button>
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class = 'main-section6-row-wrapper'>
-            <div class = 'main-section6-wrapper'>
+        <section class = 'main-section-row-wrapper main-section6-row-wrapper'>
+            <div class = 'main-section-wrapper main-section6-wrapper'>
                 <div class = 'main-section6-box'>
                     <div class = 'main-section6-box-img'>
                         <img src="images/main/section6/android-studio-hedgehog_720.png" alt="android-studio image">
@@ -446,14 +450,14 @@
                         <h2>Android Studio Hedgehog 現已推出穩定版</h2>
                         <p>並提供改善應用程式效能、電池續航力、簡化升級程序，以及加快 Jetpack Compose 開發速度的功能。</p>
                         <div class = 'main-section6-box-content-button'>
-                            <button class = 'button'>立即下載</button>
+                            <button class = 'button button-style-2'>立即下載</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class = 'main-section7-row-wrapper'>
-            <div class = 'main-section7-wrapper'>
+        <section class = 'main-section-row-wrapper main-section7-row-wrapper'>
+            <div class = 'main-section-wrapper main-section7-wrapper'>
                 <div class = 'main-section7-box'>
                     <div class = 'main-section7-box-img'>
                         <img src="images/main/section7/explore-your-interests_720.jpg" alt="explore-your-interests image">
@@ -465,7 +469,7 @@
                         <h2>尋找活動</h2>
                         <p>參加線上及現場開發人員活動，增進相關知識。</p>
                         <div class = 'main-section7-box-content-button'>
-                            <button class = 'button'>查看事件</button>
+                            <button class = 'button button-style-2'>查看事件</button>
                         </div>
                     </div>
                 </div>
@@ -475,18 +479,18 @@
                     </div>
                     <div class = 'main-section7-box-content'>
                         <div>
-                            <img src="images/main/section7/technical-skills-eyebrow.svg" alt="technical-skills-eyebrowimage">
+                            <img src="images/main/section7/technical-skills-eyebrow.svg" alt="technical-skills-eyebrow image">
                         </div>
                         <h2>提陞技術技能</h2>
                         <p>掌握 Google 技術的最新消息，精進技能並掌握新技能。</p>
                         <div class = 'main-section7-box-content-button'>
-                            <button class = 'button'>開始學習</button>
+                            <button class = 'button button-style-2'>開始學習</button>
                         </div>
                     </div>
                 </div>
                 <div class = 'main-section7-box'>
                     <div class = 'main-section7-box-img'>
-                        <img src="images/main/section7/find-community_720.png" alt="efind-community image">
+                        <img src="images/main/section7/find-community_720.png" alt="find-community image">
                     </div>
                     <div class = 'main-section7-box-content'>
                         <div>
@@ -495,56 +499,56 @@
                         <h2>加入社群</h2>
                         <p>無論您處於開發階段的哪個階段，都能使用多元化的網路環境。</p>
                         <div class = 'main-section7-box-content-button'>
-                            <button class = 'button'>探索社群</button>
+                            <button class = 'button button-style-2'>探索社群</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class = 'main-section8-row-wrapper'>
-            <div class = 'main-section8-wrapper'>
+        <section class = 'main-section-row-wrapper main-section8-row-wrapper'>
+            <div class = 'main-section-wrapper main-section8-wrapper'>
                 <div class = 'main-section8-header'>
                     <h2>追蹤 Google for Developers</h2>
                 </div>
                 <div class = 'main-section8-box-wrapper'>
-                    <div class = 'main-section8-box'>
+                    <div class = 'main-section8-box box'>
                         <div class = 'main-section8-box-logo'>
                             <img src="images/main/section8/yt.svg" alt="YouTube logo">
                         </div>
                         <h3>YouTube</h3>
                         <p>歡迎訂閱創意開發人員社群，學習 Google 技術的最新資訊。</p>
                         <div class = 'main-section8-box-button'>
-                            <button class = 'button'>瞭解詳情</button>
+                            <button class = 'button button-style-2'>瞭解詳情</button>
                         </div>
                     </div>
-                    <div class = 'main-section8-box'>
+                    <div class = 'main-section8-box box'>
                         <div class = 'main-section8-box-logo'>
                             <img src="images/main/section8/ig.webp" alt="Instagram logo">
                         </div>
                         <h3>Instagram</h3>
                         <p>追蹤及探索開發人員資源、社群活動和啟發性故事。</p>
                         <div class = 'main-section8-box-button'>
-                            <button class = 'button'>瞭解詳情</button>
+                            <button class = 'button button-style-2'>瞭解詳情</button>
                         </div>
                     </div>
-                    <div class = 'main-section8-box'>
+                    <div class = 'main-section8-box box'>
                         <div class = 'main-section8-box-logo'>
                             <img src="images/main/section8/li_72.png" alt="LinkedIn logo">
                         </div>
                         <h3>LinkedIn</h3>
                         <p>加入創意開發人員社群，瞭解如何採用最新科技產品。</p>
                         <div class = 'main-section8-box-button'>
-                            <button class = 'button'>瞭解詳情</button>
+                            <button class = 'button button-style-2'>瞭解詳情</button>
                         </div>
                     </div>
-                    <div class = 'main-section8-box'>
+                    <div class = 'main-section8-box box'>
                         <div class = 'main-section8-box-logo'>
-                            <img src="images/main/section8/x.svg" alt="x logo">
+                            <img src="images/main/section8/x.svg" alt="X logo">
                         </div>
                         <h3>x</h3>
                         <p>加入對話，探索最新的開發人員工具、資源、活動和公告事項。</p>
                         <div class = 'main-section8-box-button'>
-                            <button class = 'button'>瞭解詳情</button>
+                            <button class = 'button button-style-2'>瞭解詳情</button>
                         </div>
                     </div>
                 </div>
@@ -609,7 +613,9 @@
                     </div>
                     <div class = 'footer-bottom-subscribe'>
                         <div>訂閱 Google for Developers 電子報</div>
-                        <button class="button">訂閱</button>
+                        <div class = 'footer-bottom-subscribe-button'>
+                            <button class="button button-style-1">訂閱</button>
+                        </div>
                     </div>
                     <div class = 'footer-bottom-language'>
                         <span class="material-symbols-outlined">
