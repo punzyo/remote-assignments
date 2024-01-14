@@ -102,6 +102,7 @@
 @media screen and (max-width: 840px) {
     .footer-middle-row-wrapper nav {
         flex-direction: column;
+        gap: 10px;
     }
     .footer-middle-row-wrapper ul {
         flex-direction: column;
