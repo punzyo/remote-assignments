@@ -2,7 +2,7 @@
     let firstIndex = 0;
     let secondIndex = 1;
     while(nums[firstIndex] + nums[secondIndex] !== target){
-        if(secondIndex < nums.lemgth) {
+        if(secondIndex < nums.length) {
             secondIndex += 1;
         }
         else {
