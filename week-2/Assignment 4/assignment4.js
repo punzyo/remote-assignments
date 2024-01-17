@@ -10,10 +10,10 @@ const menuIcon = document.getElementById('menu-icon');
 const menuList = document.getElementById('mobile-menu');
 const closeIcon = document.getElementById('mobile-closeIcon')
 const showList = () => {
-    menuList.style.display = 'flex';
+    menuList.style.right = '0';
 }
 const closeList = () => {
-    menuList.style.display = 'none';
+    menuList.style.right = '-100%';
 }
 menuIcon.addEventListener('click', showList);
 closeIcon.addEventListener('click', closeList);
