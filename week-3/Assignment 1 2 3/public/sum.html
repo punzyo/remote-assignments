@@ -13,7 +13,7 @@
       const numberInput = document.getElementById('numberInput');
       const resultDiv = document.getElementById('resultDiv');
       document.getElementById('numberBtn').addEventListener('click', () => {
-        fetch(`http://localhost:3000/getData?number=${numberInput.value}`)
+        fetch(`/getData?number=${numberInput.value}`)
           .then((res) => res.json())
           .then((data) => {
             const { number } = data;
