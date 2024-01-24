@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count Number</title>
+  </head>
+  <body>
+    <input id="numberInput" type="text" placeholder="請輸入一個數字" />
+    <button id="numberBtn">送出</button>
+    <div id="resultDiv"></div>
+    <script>
+      const numberInput = document.getElementById('numberInput');
+      const resultDiv = document.getElementById('resultDiv');
+      document.getElementById('numberBtn').addEventListener('click', () => {
+        fetch(`http://localhost:3000/getData?number=${numberInput.value}`)
+          .then((res) => res.json())
+          .then((data) => {
+            const { number } = data;
+            if (isNaN(number)) resultDiv.textContent = data;
+            else {
+              resultDiv.textContent = `從1相加到這個數字的總和是: ${number}`;
+            }
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      });
+    </script>
+  </body>
+</html>
