@@ -1,0 +1,8 @@
+doctype html
+html(lang="en")
+  head
+    title Show Name
+  body
+    h1 你的名字是: #{name}
+    form(action="/trackName" method="post")
+        button(type='submit') 清除cookie

@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+const cookieParsar = require('cookie-parser');
+
+app.use(cookieParsar());
 
 app.use(express.static('public'));
 
@@ -20,6 +23,42 @@ app.get('/getData', (req, res) => {
   } else {
     res.json('Wrong Parameter');
   }
+});
+
+app.get('/myName', (req, res) => {
+  const name = req.cookies.username;
+  if (name) {
+    res.render('showName', { name });
+  } else {
+    res.render('trackName');
+  }
+});
+app.get('/trackName', (req, res) => {
+  const { name } = req.query;
+  res.cookie('username', name);
+  res.redirect('/myName');
+});
+app.post('/trackName', (req, res) => {
+  res.clearCookie('username');
+  res.redirect('/myName');
+});
+
+app.use((req, res, next) => {
+  const err = new Error('此路徑不存在');
+  err.status = 404;
+  next(err);
+});
+
+app.use((req, res, next) => {
+  const err = new Error('其他錯誤');
+  err.status = 500;
+  next(err);
+});
+
+app.use((err, req, res, next) => {
+  res.locals.error = err;
+  res.status(err.status);
+  res.render('err');
 });
 
 const PORT = 3000;
