@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.0aa1e93f.css","mappings":"AAAA,KACE,YACF,CACA,SAEE,YAAa,CACb,QAAS,CAFT,aAGF","sources":["index.css"],"sourcesContent":[".app {\n  padding: 20px;\n}\n.counter {\n  margin: 20px 0;\n  display: flex;\n  gap: 10px;\n}\n"],"names":[],"sourceRoot":""}
