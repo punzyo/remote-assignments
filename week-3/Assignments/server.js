@@ -22,7 +22,13 @@ io.on('connection', socket => {
       socket.join(roomID);
       console.log(`User ${peerID} joined room ${roomID}`);
   
-      // 通知房间内的其他用户有新用户加入,并发送新用户的 Peer ID
+     
+      const clients = Array.from(io.sockets.adapter.rooms.get(roomID) || []);
+      const otherUsers = clients.filter(clientID => clientID !== socket.id);
+  
+
+      socket.emit('other users', otherUsers);
+  
       socket.to(roomID).emit('user joined', { peerID });
     });
   
