@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "*", // 根据实际情况调整
+        origin: "*", // 允许任何来源
         methods: ["GET", "POST"]
     }
 });
@@ -17,15 +17,19 @@ const io = new Server(server, {
 io.on('connection', socket => {
     console.log('A user connected:', socket.id);
 
-    // 当用户加入房间时
     socket.on('join', room => {
+        // 将新用户加入指定的房间
         socket.join(room);
         console.log(`User ${socket.id} joined room ${room}`);
 
-        // 向房间内的其他用户广播新用户加入
-        socket.to(room).emit('user joined', socket.id);
+        // 获取房间内所有已经存在的Socket连接（不包括自己）
+        const otherUsers = io.sockets.adapter.rooms.get(room);
+        const usersToSend = Array.from(otherUsers).filter(id => id !== socket.id);
 
-        // 当收到信号时，将其转发给房间内的其他用户
+        // 向加入的新用户发送房间内所有已经存在的用户列表
+        socket.emit('all users', usersToSend);
+
+        // 当收到信号时，将其转发给房间内的指定用户
         socket.on('signal', ({ userToSignal, callerID, signal }) => {
             io.to(userToSignal).emit('signal', { id: callerID, signal });
         });
@@ -38,6 +42,7 @@ io.on('connection', socket => {
         });
     });
 });
+
 const PORT = 3000;
 server.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
