@@ -1,35 +1,43 @@
-const express = require('express');
-const cors = require('cors');
-const axios = require('axios');
-const https = require('https');
-
+// 使用 ES Module 语法导入模块
+import express from 'express';
+import http from 'http';
+import { Server } from 'socket.io';
+import cors from 'cors';
 const app = express();
 
-// 使用 CORS 中間件，允許所有來源的請求
-app.use(cors());
+app.use(cors()); // 使用默认配置，允许所有跨域请求
 
-// 設定一個路由處理 GET 請求
-app.get('/api/proxy', async (req, res) => {
-  try {
-    // 在這裡指定你想要代理的目標網址
-    const targetUrl = 'https://rate.bot.com.tw/xrt?Lang=zh-TW';
-    
-    // 使用 Axios 進行 HTTPS 請求，並設置合適的代理
-    const response = await axios.get(targetUrl, {
-      httpsAgent: new https.Agent({ rejectUnauthorized: false })
-    });
-    
-    // 將目標伺服器的回應返回給請求方
-    res.json(response.data);
-  } catch (error) {
-    // 如果出現錯誤，返回錯誤訊息
-    console.error('Proxy request error:', error);
-    res.status(500).json({ error: 'Proxy request failed' });
-  }
+const server = http.createServer(app);
+const io = new Server(server, {
+    cors: {
+        origin: "*", // 允许任何来源
+        methods: ["GET", "POST"] // 允许的 HTTP 方法
+    }
 });
 
-// 監聽在指定的端口上
-const port = 3000;
-app.listen(port, () => {
-  console.log(`Proxy server is running on port ${port}`);
+io.on('connection', socket => {
+    console.log('A user connected:', socket.id);
+
+    socket.on('join', room => {
+        socket.join(room);
+        console.log(`User ${socket.id} joined room ${room}`);
+
+        // 当用户加入房间时，向房间内的其他用户广播
+        socket.to(room).emit('user joined', socket.id);
+
+        // 当有信令数据需要交换时
+        socket.on('signal', ({ room, data }) => {
+            // 广播信令数据给房间内的其他用户，除了发送者自己
+            socket.to(room).emit('signal', { id: socket.id, signal: data });
+        });
+
+        socket.on('disconnect', () => {
+            console.log('User disconnected:', socket.id);
+        });
+    });
+});
+
+const PORT = 3000;
+server.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
