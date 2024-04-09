@@ -4,13 +4,21 @@ import { Server } from 'socket.io';
 import cors from 'cors';
 
 const app = express();
-app.use(cors());
-
+const corsOptions = {
+    origin: 'https://videotest-e2b3f.web.app', // 允许这个源的访问
+    methods: ['GET', 'POST'], // 允许的HTTP方法
+    allowedHeaders: ['Content-Type'], // 允许的头部
+    credentials: true, // 允许携带证书
+    optionsSuccessStatus: 200 // 对于旧浏览器的兼容处理
+  };
+  
+  app.use(cors(corsOptions));
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "*", // 允许任何来源
-        methods: ["GET", "POST"]
+        origin: "https://videotest-e2b3f.web.app", // 指定前端应用的URL
+        methods: ["GET", "POST"],
+        credentials: true // 允许携带证书
     }
 });
 
@@ -51,4 +59,3 @@ const PORT = 3000;
 server.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
-
